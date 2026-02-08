@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faceless Animation - Eyob Mebratu</title>
+    <style>
+        :root {
+            --primary: #10b981;
+            --bg-dark: #0a0a0a;
+            --text-primary: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-dark);
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            margin-bottom: 30px;
+            padding: 0 20px;
+        }
+
+        .back-link {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+
+        .video-wrapper {
+            width: 100%;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+            border-radius: 12px;
+            overflow: hidden;
+            background: #000;
+            aspect-ratio: 16/9;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .info {
+            margin-top: 40px;
+            text-align: left;
+            width: 100%;
+            max-width: 1200px;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        p {
+            color: #a1a1aa;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            max-width: 800px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html#portfolio" class="back-link">← Back to Portfolio</a>
+    </div>
+
+    <div class="container">
+        <div class="video-wrapper">
+            <video controls autoplay muted playsinline poster="faceless-poster.png" style="transform: translateZ(0);">
+                <source src="faceless-animation.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div style="text-align: center; margin-top: 20px; color: #a1a1aa; font-size: 1rem;">
+            Having trouble? <a href="faceless-animation.mp4" download
+                style="color: var(--primary); text-decoration: underline;">Download the video</a> to watch it on
+            your device.
+        </div>
+    </div>
+
+    <div class="info">
+        <h1>Faceless Animation Case Study</h1>
+        <p>Professional video editing showcasing creative storytelling and technical excellence. This project
+            demonstrates complex narrative structures, smooth motion transitions, and high-impact visual storytelling
+            without the need for on-camera talent.</p>
+    </div>
+</body>
+
+</html>
